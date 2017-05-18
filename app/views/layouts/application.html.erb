@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TGWebsiteFull</title>
+    <title>Tauren Group</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <!-- Fonts (GOOGLE FONTS) -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Roboto:400,700,900" rel="stylesheet">
+    <script src="https://use.fontawesome.com/600a3b82c9.js"></script>
   </head>
+
+  <header>
+    <% if customer_signed_in? %>
+      <%= render partial: 'navs/signed_in' %>
+    <% else %>
+      <%= render partial: 'navs/logged_out' %>
+    <% end %>
+  </header>
 
   <body>
     <%= yield %>
   </body>
+
+  <footer>
+
+  </footer>
 </html>

@@ -1,0 +1,43 @@
+nav{
+  background-color: #FFFFFF;
+  border-bottom: 3px solid #000000;
+}
+
+.navLogo{
+  height: 50px;
+}
+
+.navItem{
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+.navItem:hover{
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  color: #0D541A;
+}
+
+/* Small. Above 34em (544px) */
+@media screen and (min-width: 34em) {
+  .navLogo{
+    height: 50px;
+  }
+}
+
+/* Medium. Above 48em (768px) */
+@media screen and (min-width: 48em) {
+  .navLogo{
+    height: 80px;
+  }
+}
+
+/* Large. Above 62em (992px) */
+@media screen and (min-width: 62em) {
+
+}
+
+/* Extra large. Above 75em (1200px) */
+@media screen and (min-width: 75em) {
+
+}

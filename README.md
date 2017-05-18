@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+/* Small. Above 34em (544px) */
+@media screen and (min-width: 34em) {
 
-Things you may want to cover:
+}
 
-* Ruby version
+/* Medium. Above 48em (768px) */
+@media screen and (min-width: 48em) {
 
-* System dependencies
+}
 
-* Configuration
+/* Large. Above 62em (992px) */
+@media screen and (min-width: 62em) {
 
-* Database creation
+}
 
-* Database initialization
+/* Extra large. Above 75em (1200px) */
+@media screen and (min-width: 75em) {
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+}

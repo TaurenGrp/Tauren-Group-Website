@@ -1,0 +1,29 @@
+<nav id="topNav" class="navbar fixed-top navbar-toggleable-sm">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+    ☰
+  </button>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <%= link_to "Home", root_path, :class => 'nav-link navItem' %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Web & App Design", home_web_app_path, :class => 'nav-link navItem' %>
+      </li>
+      <li class="nav-item">
+      <%= link_to "Mobile Device Unlocking", home_mobile_unlock_path, :class => 'nav-link navItem' %>
+      </li>
+    </ul>
+  </div>
+  <%= image_tag('tauren-full-logo.png', :class => 'navLogo navbar-brand mx-auto') %>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item">
+        <%= link_to "Contact Us", home_contact_path, :class => 'nav-link navItem' %>
+      </li>
+      <li class="nav-item">
+       <%= link_to "About Tauren Group", home_about_path, :class => 'nav-link navItem' %>
+      </li>
+    </ul>
+  </div>
+</nav>
