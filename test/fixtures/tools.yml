@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tool_name: MyString
+  process_time_earliest: 1
+  process_time_latest: 1
+  my_cost: 1.5
+  exchange_rate: 1.5
+  tax_rate: 1.5
+  imei_required: false
+  provider_id_required: false
+
+two:
+  tool_name: MyString
+  process_time_earliest: 1
+  process_time_latest: 1
+  my_cost: 1.5
+  exchange_rate: 1.5
+  tax_rate: 1.5
+  imei_required: false
+  provider_id_required: false
