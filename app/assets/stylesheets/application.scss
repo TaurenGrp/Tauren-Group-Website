@@ -1,8 +1,14 @@
 /*
  *= require bootstrap_custom
+ *= require selectize
+ *= require selectize.default
  *= require navs
  */
 
 body{
   padding-top: 95px;
+}
+
+.invisible{
+  display: none;
 }

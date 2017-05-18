@@ -21,6 +21,7 @@ group :development, :production do
   end
 
   gem 'devise'
+  gem 'selectize-rails'
 end
 
 group :development, :test do

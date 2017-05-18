@@ -17,7 +17,7 @@ Rails.application.routes.draw do
 
   # Nested Routing
   resources :manufacturers do
-    resources :devices
+    resources :devices, except: [:index], controller: 'manufacturers/devices'
   end
 
   resources :devices do
