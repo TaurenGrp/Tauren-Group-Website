@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails TGWebsiteFull: development" uuid="fd191e73-bfef-493e-b07a-7c452bc98b32">
+      <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <introspection-schemas>TGWebsiteFull_development:public</introspection-schemas>
+    </data-source>
+    <data-source name="Rails TGWebsiteFull: production" uuid="a707f2c7-c042-4ca5-99cb-15144b98c6ff">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <user-name>TGWebsiteFull</user-name>
+    </data-source>
+    <data-source name="Rails TGWebsiteFull: test" uuid="1f2de6d8-1744-468d-aa3a-486a2c7d2198">
+      <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <introspection-schemas>TGWebsiteFull_test:public</introspection-schemas>
+    </data-source>
+  </component>
+</project>
