@@ -19,6 +19,8 @@ group :development, :production do
   source 'https://rails-assets.org' do
     gem 'rails-assets-tether', '>= 1.3.3'
   end
+
+  gem 'devise'
 end
 
 group :development, :test do

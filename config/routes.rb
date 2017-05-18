@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get 'home/mobile_unlock'
 
   # Authentication
+  devise_for :customers
 
   # Nested Routing
   resources :manufacturers do
