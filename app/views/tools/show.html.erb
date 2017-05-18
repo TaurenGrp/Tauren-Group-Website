@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Tool name:</strong>
+  <%= @tool.tool_name %>
+</p>
+
+<p>
+  <strong>Process time earliest:</strong>
+  <%= @tool.process_time_earliest %>
+</p>
+
+<p>
+  <strong>Process time latest:</strong>
+  <%= @tool.process_time_latest %>
+</p>
+
+<p>
+  <strong>My cost:</strong>
+  <%= @tool.my_cost %>
+</p>
+
+<p>
+  <strong>Exchange rate:</strong>
+  <%= @tool.exchange_rate %>
+</p>
+
+<p>
+  <strong>Tax rate:</strong>
+  <%= @tool.tax_rate %>
+</p>
+
+<p>
+  <strong>Imei required:</strong>
+  <%= @tool.imei_required %>
+</p>
+
+<p>
+  <strong>Provider id required:</strong>
+  <%= @tool.provider_id_required %>
+</p>
+
+<%= link_to 'Edit', edit_tool_path(@tool) %> |
+<%= link_to 'Back', tools_path %>

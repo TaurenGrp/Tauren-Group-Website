@@ -1,0 +1,57 @@
+<%= form_for(tool) do |f| %>
+  <% if tool.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tool.errors.count, "error") %> prohibited this tool from being saved:</h2>
+
+      <ul>
+      <% tool.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tool_name %>
+    <%= f.text_field :tool_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :process_time_earliest %>
+    <%= f.number_field :process_time_earliest %>
+  </div>
+
+  <div class="field">
+    <%= f.label :process_time_latest %>
+    <%= f.number_field :process_time_latest %>
+  </div>
+
+  <div class="field">
+    <%= f.label :my_cost %>
+    <%= f.text_field :my_cost %>
+  </div>
+
+  <div class="field">
+    <%= f.label :exchange_rate %>
+    <%= f.text_field :exchange_rate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :tax_rate %>
+    <%= f.text_field :tax_rate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :imei_required %>
+    <%= f.check_box :imei_required %>
+  </div>
+
+  <div class="field">
+    <%= f.label :provider_id_required %>
+    <%= f.check_box :provider_id_required %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

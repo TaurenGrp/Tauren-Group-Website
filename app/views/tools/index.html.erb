@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tools</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool name</th>
+      <th>Process time earliest</th>
+      <th>Process time latest</th>
+      <th>My cost</th>
+      <th>Exchange rate</th>
+      <th>Tax rate</th>
+      <th>Imei required</th>
+      <th>Provider id required</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tools.each do |tool| %>
+      <tr>
+        <td><%= tool.tool_name %></td>
+        <td><%= tool.process_time_earliest %></td>
+        <td><%= tool.process_time_latest %></td>
+        <td><%= tool.my_cost %></td>
+        <td><%= tool.exchange_rate %></td>
+        <td><%= tool.tax_rate %></td>
+        <td><%= tool.imei_required %></td>
+        <td><%= tool.provider_id_required %></td>
+        <td><%= link_to 'Show', tool %></td>
+        <td><%= link_to 'Edit', edit_tool_path(tool) %></td>
+        <td><%= link_to 'Destroy', tool, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tool', new_tool_path %>
