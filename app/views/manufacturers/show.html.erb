@@ -6,8 +6,9 @@
 </p>
 
 <div class="form-group">
-  <label for="exampleSelect1">Example select</label>
+  <label for="exampleSelect1">Choose your <%= @manufacturer.name.titleize %> device </label>
   <select class="form-control div-toggle" data-target=".device-names" id="device-select">
+    <option>Choose your device.</option>
     <% @devices.each do |device| %>
       <option value="<%= device.id %>" data-show=".<%= device.device_name %>"><%= device.device_name.titleize %></option>
     <% end %>
@@ -16,7 +17,7 @@
 
 <div class="device-names">
   <% @devices.each do |device_div| %>
-      <div class="<%= device_div.device_name %> invisible" value="<%= device_div.id %>">
+      <div class="invisible" id="<%= device_div.id %>">
         <%= device_div.device_name %>
       </div>
   <% end %>
@@ -29,26 +30,18 @@
 <%= link_to 'Back', manufacturers_path %>
 
 <script type="text/javascript">
-  $(document).on('change', '.div-toggle', function() {
-      var target = $(this).data('target');
-      var show = $("option:selected", this).data('show');
-      $(target).children().addClass('invisible');
-      $(show).removeClass('invisible');
-  });
-  $(document).ready(function() {
-      $('.div-toggle').trigger('change');
-  });
-</script>
-
-<script type="text/javascript">
     $('#device-select').selectize({
         sortField: 'text'
     });
+    var prev;
     $('#device-select').change(function (){
-        var selectedData = $(this).attr('data-value');
-        console.log(selectedData);
-        $('.device-names').find('[value=' + selectedData+']').removeClass('invisible');
-
+        if(prev){
+            prev.addClass('invisible');
+        }
+        var selectedData = $("#device-select option:selected").val()
+        // console.log(selectedData);
+       var el = $('#'+ selectedData);
+        el.removeClass('invisible');
+        prev = el;
     })
-
 </script>
