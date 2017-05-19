@@ -5,6 +5,13 @@
   <%= @manufacturer.name %>
 </p>
 
+  <%= @manufacturer.image_data %>
+  <% if @manufacturer.try(:image) %>
+    <%= image_tag @manufacturer.image.url(public: true) %>
+  <% else %>
+
+  <% end %>
+
 <div class="form-group">
   <label for="exampleSelect1">Choose your <%= @manufacturer.name.titleize %> device </label>
   <select class="form-control div-toggle" data-target=".device-names" id="device-select">

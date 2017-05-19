@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby "2.4.0"
+ruby '2.4.0'
 
 group :development, :production do
   gem 'rails', '~> 5.0.3'
@@ -22,6 +22,12 @@ group :development, :production do
 
   gem 'devise'
   gem 'selectize-rails'
+  gem 'figaro'
+
+  gem 'shrine'
+  gem 'aws-sdk', '~> 2.1'
+  gem 'roda'
+  gem 'jquery-fileupload-rails'
 end
 
 group :development, :test do

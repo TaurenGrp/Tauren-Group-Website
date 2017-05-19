@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   #resources :carriers
   #resources :devices
   #resources :manufacturers
-
+  mount ImageUploader::UploadEndpoint => "/images/upload"
   root 'home#index'
   get 'home/about'
   get 'home/contact'
